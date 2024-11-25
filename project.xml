@@ -5,6 +5,7 @@
       <triggering cycletiming="0"/>
       <compiler>
          <cmpoptions>
+            <opt name="configname" value="Default"/>
             <opt name="simul" value="ON"/>
             <opt name="debug" value="ON"/>
             <opt name="ctseg" value="ON"/>
@@ -29,6 +30,8 @@
             <opt name="noiostep" value="OFF"/>
             <opt name="rtrigno0" value="OFF"/>
             <opt name="ushr" value="OFF"/>
+            <opt name="uplall" value="OFF"/>
+            <opt name="strictretaincrc" value="OFF"/>
             <opt name="optbool" value="OFF"/>
             <opt name="loadupl" value="OFF"/>
             <opt name="checkfbdinputs" value="OFF"/>
@@ -80,6 +83,70 @@
          <opt name="size_pou" value="0"/>
       </onlinechange>
    <onlinecsts/>
+   <config name="Default.CPO">olc=0
+hot=
+tcy=0
+cpo:[OPTIONS]
+cpo:CONFIGNAME=Default
+cpo:SIMUL=ON
+cpo:DEBUG=ON
+cpo:CTSEG=ON
+cpo:FBDFLOW=OFF
+cpo:EMBEDSYMBOLS=ON
+cpo:EMBEDSYBCASE=OFF
+cpo:WARNING=ON
+cpo:WARNISERR=OFF
+cpo:SFCSAFE=OFF
+cpo:FBDOPTIM=OFF
+cpo:LDOPTIM=OFF
+cpo:CHECKSYBCONFLICTS=ON
+cpo:STSTRICT=OFF
+cpo:IECCHECK=OFF
+cpo:TRACEPOUSIZE=OFF
+cpo:CHECKPROFILE=OFF
+cpo:SAFEARRAY=ON
+cpo:NOREALEQ=OFF
+cpo:STAN=OFF
+cpo:VSI=OFF
+cpo:FBCHECK=OFF
+cpo:NOIOSTEP=OFF
+cpo:RTRIGNO0=OFF
+cpo:USHR=OFF
+cpo:UPLALL=OFF
+cpo:STRICTRETAINCRC=OFF
+cpo:OPTBOOL=OFF
+cpo:LOADUPL=OFF
+cpo:CHECKFBDINPUTS=OFF
+cpo:UPDEXT=OFF
+cpo:EXTDEF=OFF
+cpo:PASSWORD=
+cpo:MWLOG=OFF
+cpo:VMHEAP=0
+cpo:LOCK=NONE
+cpo:CC=
+cpo:CCTOOLDIR=
+cpo:CCTARGET=
+cpo:CCPURE=OFF
+cpo:CCLOAD=OFF
+cpo:CCSHOW=ON
+cpo:CCHOT=OFF
+cpo:MAPUINT=ON
+cpo:
+cpo:[SIMULCODE]
+cpo:TARGET=T5SIMUL
+cpo:SUFFIX=.XWS
+cpo:MOTOROLAENDIAN=OFF
+cpo:T5STYLE=ON
+cpo:
+cpo:[TARGETCODE]
+cpo:TARGET=T5RTI
+cpo:SUFFIX=.XTI
+cpo:MOTOROLAENDIAN=OFF
+cpo:T5STYLE=ON
+cpo:CONFIGNAME=T5RTI
+cpo:COMMENT=Straton T5 runtime (Intel like byte ordering)
+cpo:
+   </config>
    </settings>
    <libraries>
    </libraries>
